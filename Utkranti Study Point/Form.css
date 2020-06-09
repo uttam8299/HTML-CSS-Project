@@ -1,0 +1,48 @@
+h1{
+    color:red;
+    background-color:yellow;
+}
+
+body{
+    background-color: beige;
+}
+
+input[type=text]{
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=date]{
+    width: 15%;
+padding: 12px 20px;
+margin: 8px 0;
+display:inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.ckbox,input[type=checkbox]{
+    display:inline-block;
+    border-radius: 4px; 
+    
+}
+
+.button{
+     width: 15%;
+padding: 12px 20px;
+margin: 8px 0;
+display:inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+   
+}
+
+
+.button:hover{
+     display:inline-block;
+    background-color: cornflowerblue;
+}
