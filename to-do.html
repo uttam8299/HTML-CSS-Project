@@ -1,0 +1,83 @@
+<style>
+
+    body{
+        background-color: cornsilk;
+    }
+    #h1{
+        color: red;
+        background-color: yellow;
+    }
+    #h3{
+        color: black;
+        background-color: coral;
+    }
+    .div{
+        padding: 20px;
+        margin: 40px;
+    }
+    #todo{
+        text-align: center;
+        padding: 50px;
+        margin:auto;
+        list-style: none;
+    }
+    hr{
+        border: 2px solid;
+        color: red;
+    }
+    #btn{
+        
+     width: 15%;
+padding: 12px 20px;
+margin: 8px 0;
+display:inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+   
+    }
+
+</style>
+
+<!--HTML Code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">    
+<title>To-Do List</title>    
+</head>
+
+<body>
+    <center><h1 id="h1">To-Do List</h1></center>
+    <center><h3 id="h3">Click on the button below to make your To-Do List</h3></center>
+     <hr>
+       <div class="list" >
+     
+         <ol id="todo">
+         </ol>
+        </div>
+    
+   <div class="div">
+      <center><button id="btn">Add Items
+         </button></center>    
+    </div>
+    
+    
+    <script>
+    document.getElementById("btn").addEventListener("click",e=>{
+        const val = prompt("Enter your items");
+        if(val==""){
+            val = prompt("Enter your item");
+        }
+        else{
+        const list = document.createElement("li");
+        list.textContent = val;
+        document.getElementById("todo").appendChild(list);
+        }
+    });
+    
+    </script>
+    
+</body>
+
+</html>
